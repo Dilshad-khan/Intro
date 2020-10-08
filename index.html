@@ -3,10 +3,207 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to my page</title>
+    <title>Dilshad</title>
+    <!-- Google font https://fonts.google/ -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Materialize icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Materialize css  -->
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- custom css link:css  -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1 style="color: crimson">Dilshad</h1>
-    <h2>MCA</h2>
+    <!-- <a href="#" onclick="toggleModal()">Click me</a> -->
+
+    <section class="fnavbar">
+      <nav class="nav-fixed">
+        <!--<nav class="nav-extended">-->
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Dilshad</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#" onclick="toggleModal();">About</a></li>
+            <li><a href="#" onclick="toggleModal();">Experience</a></li>
+            <li><a href="#" onclick="toggleModal();">Work</a></li>
+            <li><a href="#" onclick="toggleModal();">Contact</a></li>
+            <li><a href="#" onclick="toggleModal();">Resume</a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#" onclick="toggleModal();">About</a></li>
+        <li><a href="#" onclick="toggleModal();">Experience</a></li>
+        <li><a href="#" onclick="toggleModal();">Work</a></li>
+        <li><a href="#" onclick="toggleModal();">Contact</a></li>
+        <li><a href="#" onclick="toggleModal();">Resume</a></li>
+      </ul>
+    </section>
+
+    <section class="fslider">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="images/BeautyPlus_20170524093913_save.jpg" />
+            <div id="menu" class="caption center-align white-text">
+              <h2 class="header">
+                Hi, My name is <b>Dilshad</b> <br />i build things for web and
+                android
+              </h2>
+            </div>
+          </li>
+          <li>
+            <img src="images/banner.png" alt="image one" />
+            <div class="caption center-align white-text">
+              <h5 class="light text-lighten-3">
+                I'm a software engineer, MCA specializing in building(and
+                occasionally designing) exceptional websites, applications, and
+                everything in between. <br /><br />
+                <a
+                  href="#"
+                  style="background: #6f4037 !important"
+                  class="btn waves-effect waves-light"
+                  >Get In Touch</a
+                >
+              </h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="fabout">
+      <div class="section white center">
+        <div class="row container">
+          <h2 class="header">About Me</h2>
+          <p class="grey-text text-darken-3">
+            Hello! I'm Dilshad, a software engineer and Full Stack Developer
+            base in University of Rajasthan(India). <br />
+            I enjoy creating things that live on the internet, whether that be
+            websites, applications or anything in between. My goal is to always
+            build products that provide pixel-perfect, performant experience.
+            <br /><br />
+            Shortly after graduating from <b>University of Rajasthan</b> <br />I
+            joined the engineering team at C-DAC ATC where i work on a wide
+            variety of interesting and meaningful projects in my internship.
+            <br /><br />
+            Here are a few technologies I've been working with recently:
+          </p>
+          <ul>
+            <li>JavaScript(ES6)</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>React Native</li>
+            <li>HTML & CSS</li>
+            <li>Java</li>
+          </ul>
+        </div>
+        <img src="images/BeautyPlus_20170524093913_save.jpg" />
+      </div>
+    </section>
+    <!-- lorem200 -->
+    <!-- <section class="descrip">
+      <div class="section white center">
+        for white background and center-->
+
+    <!-- <div class="row container center">
+          <div class="col center l8 s12 move">
+           col always come in row. l8 for larger screen size take 8 out of 12-->
+    <!-- </div class="col right">
+          
+          <div class="col center l4 s12">
+         l4 for large screen size and take 4 out of 12. s12 for smaller screen size-->
+    <!-- <img
+              src="images/coffee.png"
+              style="object-fit: contain"
+              height="200"
+              width="auto"
+              alt=""
+            />  -->
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- </div> -->
+
+    <!-- </section>  -->
+    <!-- <section>
+      <div class="col right">
+        <a href="#menu" class="btn-floating btn-large cyan pulse"
+          ><i class="material-icons">menu</i></a
+        >
+      </div>
+    </section> -->
+
+    <section class="footer">
+      <footer class="footer-one">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h4 class="white-text">Contact-Us</h4>
+              <p class="grey-text">72 Jaipur, India</p>
+              <p class="grey-text">+91-7737543605</p>
+            </div>
+            <div class="col l6 s12">
+              <h4 class="white-text">Social Media</h4>
+              <ul>
+                <li class="grey-text">FacebooK</li>
+                <li class="grey-text">Instagram</li>
+                <li class="grey-text">Twitter</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row footer-two">
+          <div class="col l6 s12">
+            <p class="white-text">&copy; CafeKing</p>
+          </div>
+          <div class="col l6 s12">
+            <p class="white-text">Designed by Dilshad</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <section class="infomodal">
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <h4 id="info-modal-heading">Link Disabled</h4>
+          <p id="info-modal-content">
+            Sorry! All linkes are disabled as of now
+          </p>
+        </div>
+        <!-- close modal window -->
+        <div class="modal-footer">
+          <a href="#" class="modal-close waves-effect btn-flat">Close</a>
+        </div>
+      </div>
+    </section>
   </body>
+  <!-- JQuery cdnjs.com -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Materialize script -->
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Custom js -->
+  <script src="js/loader.js"></script>
 </html>
