@@ -1,11 +1,11 @@
 .nav-wrapper {
   /* background-color: #6f6f6f; */
-  background-color: #6f4037;
+  background-color: #006064;
 }
 
 /* color of slides points */
 .slider .indicators .indicator-item.active {
-  background-color: #6f4037;
+  background-color: #006064;
 }
 
 .move {
@@ -19,13 +19,15 @@
 }
 
 .icon-coffee {
-  color: #6f4037;
+  color: #006064;
 }
 
 .footer-one {
-  background: #6f4037;
+  background: #006064;
 }
 
 .footer-two {
   background: #462822;
+}
+#myImg {
 }

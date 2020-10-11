@@ -38,20 +38,24 @@
             ><i class="material-icons">menu</i></a
           >
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#" onclick="toggleModal();">About</a></li>
-            <li><a href="#" onclick="toggleModal();">Experience</a></li>
-            <li><a href="#" onclick="toggleModal();">Work</a></li>
-            <li><a href="#" onclick="toggleModal();">Contact</a></li>
-            <li><a href="#" onclick="toggleModal();">Resume</a></li>
+            <li><a href="#abt">About</a></li>
+            <!-- <li><a href="#" >Experience</a></li>   /removed toggleModal -->
+            <li><a href="#gtb">Work</a></li>
+            <li><a href="#ct">Contact</a></li>
+            <li>
+              <a href="pdf/Dilshad Resume 2.pdf" download>Resume</a>
+            </li>
           </ul>
         </div>
       </nav>
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="#" onclick="toggleModal();">About</a></li>
-        <li><a href="#" onclick="toggleModal();">Experience</a></li>
-        <li><a href="#" onclick="toggleModal();">Work</a></li>
-        <li><a href="#" onclick="toggleModal();">Contact</a></li>
-        <li><a href="#" onclick="toggleModal();">Resume</a></li>
+        <li><a href="#abt">About</a></li>
+        <!-- <li><a href="#" >Experience</a></li> -->
+        <li><a href="#gtb">Work</a></li>
+        <li><a href="#ct">Contact</a></li>
+        <li>
+          <a href="pdf/Dilshad Resume 2.pdf" download>Resume</a>
+        </li>
       </ul>
     </section>
 
@@ -76,7 +80,7 @@
                 everything in between. <br /><br />
                 <a
                   href="#"
-                  style="background: #6f4037 !important"
+                  style="background: #006064 !important"
                   class="btn waves-effect waves-light"
                   >Get In Touch</a
                 >
@@ -89,7 +93,7 @@
     <section class="fabout">
       <div class="section white center">
         <div class="row container">
-          <h2 class="header">About Me</h2>
+          <h2 class="header" id="abt">About Me</h2>
           <p class="grey-text text-darken-3">
             Hello! I'm Dilshad, a software engineer and Full Stack Developer
             base in University of Rajasthan(India). <br />
@@ -112,7 +116,13 @@
             <li>Java</li>
           </ul>
         </div>
-        <img src="images/BeautyPlus_20170524093913_save.jpg" />
+        <div class="col s12 m2">
+          <img
+            src="images/BeautyPlus_20170524093913_save.jpg"
+            class="responsive-img card-panel hoverable z-depth-3"
+            id="myImg"
+          />
+        </div>
       </div>
     </section>
     <!-- lorem200 -->
@@ -148,29 +158,196 @@
       </div>
     </section> -->
 
+    <section>
+      <div class="row">
+        <div class="col s4">
+          <div class="card">
+            <!-- <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator"
+                style="width: 500px; height: 500px"
+                src="images/linkedin.png"
+              />
+            </div> -->
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >LinkedIn<i class="material-icons right">more_vert</i></span
+              >
+              <p>
+                <a href="https://www.linkedin.com/in/dilshad-khan-58ba83192"
+                  >Profile</a
+                >
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"
+                >LinkedIn<i class="material-icons right">close</i></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card">
+            <!-- <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/Github.jpg" />
+            </div> -->
+            <div class="card-content" id="gtb">
+              <span class="card-title activator grey-text text-darken-4"
+                >Github<i class="material-icons right">more_vert</i></span
+              >
+              <p><a href="https://github.com/Dilshad-khan">Profile</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"
+                >Github<i class="material-icons right">close</i></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card">
+            <!-- <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/insta.png" />
+            </div> -->
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Instagram<i class="material-icons right">more_vert</i></span
+              >
+              <p>
+                <a href="https://www.instagram.com/zohair__khan/?hl=en"
+                  >Profile</a
+                >
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"
+                >Instagram<i class="material-icons right">close</i></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="freviews">
+      <div class="section white center">
+        <!-- <h3 class="header">What our customers say</h3> -->
+        <div class="carousel myreviews" style="margin-bottom: 30px">
+          <a href="#" class="carousel-item">
+            <div class="row">
+              <div class="col s12">
+                <div
+                  class="card-panel teal"
+                  style="background-color: #006064 !important"
+                >
+                  <!--teal for color-->
+                  <span class="white-text">Java</span>
+                  <p class="white-text">Knowledge of Core Java</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="carousel-item">
+            <div class="row">
+              <div class="col s12">
+                <div
+                  class="card-panel teal"
+                  style="background-color: #006064 !important"
+                >
+                  <!--teal for color-->
+                  <span class="white-text">DS & Algo</span>
+                  <p class="white-text">
+                    Efficient Knowledge of Data structure and Algorithms
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="carousel-item">
+            <div class="row">
+              <div class="col s12">
+                <div
+                  class="card-panel teal"
+                  style="background-color: #006064 !important"
+                >
+                  <!--teal for color-->
+                  <span class="white-text">Front-End</span>
+                  <p class="white-text">
+                    JavaScript <br />
+                    ReactJS <br />
+                    HTML & CSS
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="carousel-item">
+            <div class="row">
+              <div class="col s12">
+                <div
+                  class="card-panel teal"
+                  style="background-color: #006064 !important"
+                >
+                  <!--teal for color-->
+                  <span class="white-text">Back-End</span>
+                  <p class="white-text">
+                    NodeJS <br />
+                    ExpressJS
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="carousel-item">
+            <div class="row">
+              <div class="col s12">
+                <div
+                  class="card-panel teal"
+                  style="background-color: #006064 !important"
+                >
+                  <!--teal for color-->
+                  <span class="white-text">Mobile App development</span>
+                  <p class="white-text">React native</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="carousel-item">
+            <div class="row">
+              <div class="col s12">
+                <div
+                  class="card-panel teal"
+                  style="background-color: #006064 !important"
+                >
+                  <!--teal for color-->
+                  <span class="white-text">Database</span>
+                  <p class="white-text">
+                    MongoDB<br />
+                    Mongoose <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="footer">
       <footer class="footer-one">
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
-              <h4 class="white-text">Contact-Us</h4>
-              <p class="grey-text">72 Jaipur, India</p>
+              <h4 class="white-text" id="ct">Contact</h4>
+              <p class="grey-text">
+                72 sanjay nagar choraha, Jhotwara <br />
+                Jaipur, India
+              </p>
               <p class="grey-text">+91-7737543605</p>
-            </div>
-            <div class="col l6 s12">
-              <h4 class="white-text">Social Media</h4>
-              <ul>
-                <li class="grey-text">FacebooK</li>
-                <li class="grey-text">Instagram</li>
-                <li class="grey-text">Twitter</li>
-              </ul>
             </div>
           </div>
         </div>
-        <div class="row footer-two">
-          <div class="col l6 s12">
-            <p class="white-text">&copy; CafeKing</p>
-          </div>
+        <div class="row footer-two" style="background-color: #00838f">
           <div class="col l6 s12">
             <p class="white-text">Designed by Dilshad</p>
           </div>
